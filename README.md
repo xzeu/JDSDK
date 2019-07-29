@@ -12,3 +12,7 @@
 - idna==2.8
 - requests==2.22.0
 - urllib3==1.25.3
+
+## 京动联盟API文档地址
+
+`https://union.jd.com/openplatform/api/739`

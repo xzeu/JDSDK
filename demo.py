@@ -40,6 +40,11 @@ a.param_json = json.dumps({
 
 try:
     f = a.getResponse()
-    print(f)
+    result=json.loads(f['jd_union_open_goods_jingfen_query_response']['result'])['data']
+
+    for r in result:
+        print(r)
+    print(result)
+    
 except Exception as e:
     print(e)
