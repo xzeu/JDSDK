@@ -254,7 +254,6 @@ class RestApi(object):
             if P_EDESC in jsonobj["error_response"]:
                 error.en_desc = jsonobj["error_response"][P_EDESC]
             raise error
-        print(json.loads(jsonobj['jd_union_open_goods_jingfen_query_response']['result'])['data'])
         return jsonobj
 
     def getApplicationParameters(self):

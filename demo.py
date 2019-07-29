@@ -9,7 +9,7 @@ jing.setDefaultAppInfo("110bc5b99cfab32454dcaa8022dd8c4", "612f41079b0241fd8be42
 
 '''
 使用自定义的域名和端口（京东没有测试沙箱环境使用）
-a = top.api.UserGetRequest("https://router.jd.com/api",443)
+a = jing.api.UserGetRequest("https://router.jd.com/api",443)
 使用默认的配置（调用线上环境）
 a = jing.api.UserGetRequest()
 '''
@@ -18,7 +18,7 @@ a = jing.api.jdUnionOpenGoodsJingfenQuery()
 
 '''
 可以在运行期替换掉默认的appkey和secret的设置
-a.set_app_info(top.appinfo("appkey","*******"))
+a.set_app_info(jing.appinfo("appkey","*******"))
 '''
 
 # a.param_json = json.dumps({
