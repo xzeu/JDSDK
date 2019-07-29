@@ -1,0 +1,4 @@
+# 秒杀商品查询接口
+from jing.api.rest.jdUnionOpenGoodsLinkQuery import jdUnionOpenGoodsLinkQueryt
+from jing.api.rest.jdUnionOpenGoodsJingfenQuery import jdUnionOpenGoodsJingfenQuery
+from jing.api.rest.jdUnionOpenCategoryGoodsGet import jdUnionOpenCategoryGoodsGet
