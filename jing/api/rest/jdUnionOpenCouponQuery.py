@@ -1,14 +1,15 @@
 from jing.api.base import RestApi
 
 
-class jdUnionOpenGoodsJingfenQuery(RestApi):
+class jdUnionOpenCouponQuery(RestApi):
     '''
-    京粉精选商品查询接口
-    
+    优惠券领取情况查询接口
+
     '''
+
     def __init__(self, domain='https://router.jd.com/api', port=443):
         '''
-        京粉精选商品查询接口
+        优惠券领取情况查询接口
         :param domain: 域名
         :param port: 端口
         :param param_json {
@@ -20,7 +21,7 @@ class jdUnionOpenGoodsJingfenQuery(RestApi):
         }
         '''
         RestApi.__init__(self, domain, port)
-        self.param_json = None
+        self.couponUrls = None
 
     def getapiname(self):
-        return 'jd.union.open.goods.jingfen.query'
+        return 'jd.union.open.coupon.query'
